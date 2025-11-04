@@ -1,0 +1,135 @@
+/* Genel Sıfırlama ve Fontlar */
+body {
+    font-family: 'Arial', sans-serif; /* Wikipedia'nın kullandığına benzer bir font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Açık gri sayfa arkaplanı */
+    color: #202122; /* Standart metin rengi */
+}
+
+/* --- Üst Başlık ve Menü Stilleri (Header) --- */
+.wiki-header {
+    background-color: #f6f6f6; /* Hafif gri arkaplan */
+    border-bottom: 1px solid #a7d7f9; /* Mavi alt çizgi */
+    padding: 5px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wiki-logo .logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    /* Basit bir logo yerine metin kullanıyoruz */
+}
+
+.wiki-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.wiki-nav li a {
+    text-decoration: none;
+    color: #007bff; /* Mavi link rengi */
+    padding: 5px 15px;
+    display: block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-right: 5px;
+}
+
+.wiki-nav li:first-child a {
+    /* Aktif sekme stili */
+    background-color: #fff;
+    border-color: #a7d7f9;
+    border-bottom: 1px solid #fff; 
+    font-weight: bold;
+}
+
+/* --- İçerik Düzeni (Content Wrapper) --- */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    /* Ana içeriğin infobox'tan daha geniş olması için */
+}
+
+.wiki-content {
+    flex-grow: 1; /* Geriye kalan tüm alanı kapla */
+    padding-right: 20px; /* Infobox ile arasında boşluk bırak */
+    background-color: #fff; /* İçerik alanı beyaz arkaplan */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* --- Ana Başlıklar Stili --- */
+.main-title {
+    font-size: 2em;
+    border-bottom: 1px solid #a2a9b1; /* Wikipedia ana başlık alt çizgisi */
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #a2a9b1;
+    margin-top: 1.5em;
+    padding-bottom: 3px;
+}
+
+/* --- Bilgi Kutusu (Infobox) Stili --- */
+.infobox {
+    width: 300px; /* Standart infobox genişliği */
+    float: right; /* İçeriğin yanına kaydır */
+    margin: 0 0 1em 1em;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa; /* Hafif gri infobox arkaplanı */
+    font-size: 90%;
+    line-height: 1.5;
+    clear: right; /* Sağa kaydırmayı temizle */
+}
+
+.infobox-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    background-color: #dcecf6; /* Hafif mavi başlık arkaplanı */
+    margin: 0;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.infobox-image-placeholder {
+    height: 150px; /* Resim için yer tutucu boyutu */
+    background-color: #ccc;
+    text-align: center;
+    line-height: 150px;
+    color: #333;
+    font-style: italic;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox th, .infobox td {
+    padding: 5px 10px;
+    border-top: 1px solid #a2a9b1;
+    text-align: left;
+}
+
+.infobox th {
+    font-weight: normal;
+    background-color: #f0f0f0; /* Tablo başlıkları için hafif gölgelendirme */
+    width: 40%;
+}
+
+.infobox td {
+    background-color: #ffffff;
+}
